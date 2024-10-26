@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Alegreya Sans", sans-serif;
+  font-size: 10px;
 }
 
 body {
@@ -113,15 +114,16 @@ body {
 }
 
 form {
-  width: 100%;
+  width: 90%;
   max-width: 1280px;
-  margin: 0 auto;
+  margin: 2rem auto;
   padding: 10px;
   background: #40414f;
 
   display: flex;
   flex-direction: row;
   gap: 10px;
+  border-radius: 5rem;
 }
 
 textarea {

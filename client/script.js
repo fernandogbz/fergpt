@@ -30,3 +30,11 @@ function typeText(e, text) {
     }
   }, 20);
 }
+
+function generateId() {
+  const timestamp = Date.now();
+  const random = Math.random();
+  const hexadecimalString = random.toString(16);
+
+  return `id-${timestamp}-${hexadecimalString}`;
+}

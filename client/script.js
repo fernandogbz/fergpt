@@ -17,3 +17,16 @@ function loader(e) {
     }
   }, 300);
 }
+
+function typeText(e, text) {
+  let index = 0;
+
+  let interval = setInterval(() => {
+    if (index < text.length) {
+      e.innerHTML += text.chartAt(index);
+      index++;
+    } else {
+      clearInterval(interval);
+    }
+  }, 20);
+}

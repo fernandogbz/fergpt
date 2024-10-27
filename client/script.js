@@ -4,7 +4,7 @@ import user from "./assets/user.svg";
 const form = document.querySelector("form");
 const chatContainer = document.querySelector("#chat-container");
 
-loadInterval;
+let loadInterval;
 
 function loader(e) {
   e.textContent = "";
@@ -80,7 +80,7 @@ const handleSubmit = async (e) => {
 // if user clicks on send button or press enter key then handleSubmit function will be called.
 form.addEventListener("submit", handleSubmit);
 form.addEventListener("keyup", (e) => {
-  if (e.key === "13") {
+  if (e.keyCode === 13) {
     handleSubmit(e);
   }
 });

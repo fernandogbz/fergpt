@@ -76,3 +76,11 @@ const handleSubmit = async (e) => {
 
   loader(messageDiv);
 };
+
+// if user clicks on send button or press enter key then handleSubmit function will be called.
+form.addEventListener("submit", handleSubmit);
+form.addEventListener("keyup", (e) => {
+  if (e.key === "13") {
+    handleSubmit(e);
+  }
+});
